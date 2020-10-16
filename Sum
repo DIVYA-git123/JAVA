@@ -1,23 +1,11 @@
-Program to Check Prime Number using a for loop
-public class Main {
+Sum of two numbers
+public class AddTwoNumbers {
 
-    public static void main(String[] args) {
+   public static void main(String[] args) {
+        
+      int num1 = 5, num2 = 15, sum;
+      sum = num1 + num2;
 
-        int num = 29;
-        boolean flag = false;
-        for(int i = 2; i <= num/2; ++i)
-        {
-            // condition for nonprime number
-            if(num % i == 0)
-            {
-                flag = true;
-                break;
-            }
-        }
-
-        if (!flag)
-            System.out.println(num + " is a prime number.");
-        else
-            System.out.println(num + " is not a prime number.");
-    }
+      System.out.println("Sum of these numbers: "+sum);
+   }
 }
